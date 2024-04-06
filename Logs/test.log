@@ -181,3 +181,48 @@
 04/06/2024 05:49:47 PM: INFO: Driver [C:\Users\Ayush Srivastava\.wdm\drivers\chromedriver\win64\123.0.6312.105\chromedriver-win32/chromedriver.exe] found in cache
 04/06/2024 05:49:49 PM: INFO: ****************** Test_001_Login ********************
 04/06/2024 05:49:55 PM: INFO: ***************** Title Matched *******************
+04/06/2024 06:18:27 PM: INFO: ====== WebDriver manager ======
+04/06/2024 06:18:28 PM: INFO: Get LATEST chromedriver version for google-chrome
+04/06/2024 06:18:29 PM: INFO: Get LATEST chromedriver version for google-chrome
+04/06/2024 06:18:29 PM: INFO: Driver [C:\Users\Ayush Srivastava\.wdm\drivers\chromedriver\win64\123.0.6312.105\chromedriver-win32/chromedriver.exe] found in cache
+04/06/2024 06:18:30 PM: INFO: ****************** Test_001_Login ********************
+04/06/2024 06:19:45 PM: INFO: ====== WebDriver manager ======
+04/06/2024 06:19:46 PM: INFO: Get LATEST chromedriver version for google-chrome
+04/06/2024 06:19:47 PM: INFO: Get LATEST chromedriver version for google-chrome
+04/06/2024 06:19:47 PM: INFO: Driver [C:\Users\Ayush Srivastava\.wdm\drivers\chromedriver\win64\123.0.6312.105\chromedriver-win32/chromedriver.exe] found in cache
+04/06/2024 06:19:49 PM: INFO: ****************** Test_001_Login ********************
+04/06/2024 06:19:58 PM: INFO: ***************** Title Matched *******************
+04/06/2024 06:24:01 PM: INFO: ====== WebDriver manager ======
+04/06/2024 06:24:02 PM: INFO: Get LATEST chromedriver version for google-chrome
+04/06/2024 06:24:02 PM: INFO: Get LATEST chromedriver version for google-chrome
+04/06/2024 06:24:03 PM: INFO: Driver [C:\Users\Ayush Srivastava\.wdm\drivers\chromedriver\win64\123.0.6312.105\chromedriver-win32/chromedriver.exe] found in cache
+04/06/2024 06:24:04 PM: INFO: ****************** Test_001_Login ********************
+04/06/2024 06:24:11 PM: INFO: ***************** Title Matched *******************
+04/06/2024 06:28:52 PM: INFO: ====== WebDriver manager ======
+04/06/2024 06:28:53 PM: INFO: Get LATEST chromedriver version for google-chrome
+04/06/2024 06:28:54 PM: INFO: Get LATEST chromedriver version for google-chrome
+04/06/2024 06:28:54 PM: INFO: Driver [C:\Users\Ayush Srivastava\.wdm\drivers\chromedriver\win64\123.0.6312.105\chromedriver-win32/chromedriver.exe] found in cache
+04/06/2024 06:28:56 PM: INFO: ****************** Test_001_Login ********************
+04/06/2024 06:29:16 PM: INFO: ***************** Title Matched *******************
+04/06/2024 06:30:42 PM: INFO: ====== WebDriver manager ======
+04/06/2024 06:30:43 PM: INFO: Get LATEST chromedriver version for google-chrome
+04/06/2024 06:30:43 PM: INFO: Get LATEST chromedriver version for google-chrome
+04/06/2024 06:30:44 PM: INFO: Driver [C:\Users\Ayush Srivastava\.wdm\drivers\chromedriver\win64\123.0.6312.105\chromedriver-win32/chromedriver.exe] found in cache
+04/06/2024 06:30:45 PM: INFO: ****************** Test_001_Login ********************
+04/06/2024 06:30:52 PM: INFO: ***************** Title Matched *******************
+04/06/2024 06:31:32 PM: INFO: ====== WebDriver manager ======
+04/06/2024 06:31:33 PM: INFO: Get LATEST edgedriver version for Edge 123.0.2420
+04/06/2024 06:31:34 PM: INFO: Get LATEST edgedriver version for Edge 123.0.2420
+04/06/2024 06:31:34 PM: INFO: There is no [win64] edgedriver "123.0.2420.81" for browser edge "123.0.2420" in cache
+04/06/2024 06:31:34 PM: INFO: Get LATEST edgedriver version for Edge 123.0.2420
+04/06/2024 06:31:34 PM: INFO: About to download new driver from https://msedgedriver.azureedge.net/123.0.2420.81/edgedriver_win64.zip
+04/06/2024 06:31:35 PM: INFO: Driver downloading response is 200
+04/06/2024 06:31:35 PM: INFO: Get LATEST edgedriver version for Edge 123.0.2420
+04/06/2024 06:31:36 PM: INFO: Driver has been saved in cache [C:\Users\Ayush Srivastava\.wdm\drivers\edgedriver\win64\123.0.2420.81]
+04/06/2024 06:31:38 PM: INFO: ****************** Test_001_Login ********************
+04/06/2024 06:32:37 PM: INFO: ====== WebDriver manager ======
+04/06/2024 06:32:38 PM: INFO: Get LATEST edgedriver version for Edge 123.0.2420
+04/06/2024 06:32:38 PM: INFO: Get LATEST edgedriver version for Edge 123.0.2420
+04/06/2024 06:32:39 PM: INFO: Driver [C:\Users\Ayush Srivastava\.wdm\drivers\edgedriver\win64\123.0.2420.81\msedgedriver.exe] found in cache
+04/06/2024 06:32:40 PM: INFO: ****************** Test_001_Login ********************
+04/06/2024 06:32:54 PM: INFO: ***************** Title Matched *******************

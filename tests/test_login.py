@@ -1,8 +1,7 @@
-import time
 from pageObjects.LoginPage import Login
 from utilities.readConfig import ReadConfig
 from utilities.customLogger import Log
-
+import time
 class Test_001_Login:
     baseUrl = ReadConfig.getBaseURL()
     username = ReadConfig.getUsername()

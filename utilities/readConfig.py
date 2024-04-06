@@ -5,7 +5,7 @@ config = configparser.RawConfigParser()
 
 path = Path(__file__)
 ROOT_DIR = path.parent.absolute()
-config.read("C:\\Users\\Ayush Srivastava\\PycharmProjects\\PyTestFramework\\Configurations\\conf.cfg")
+config.read(".\\Configurations\\config.ini")
 
 class ReadConfig:
 
