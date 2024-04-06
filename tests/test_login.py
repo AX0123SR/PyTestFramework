@@ -3,7 +3,6 @@ from pageObjects.LoginPage import Login
 from utilities.readConfig import ReadConfig
 from utilities.customLogger import Log
 
-
 class Test_001_Login:
     baseUrl = ReadConfig.getBaseURL()
     username = ReadConfig.getUsername()
@@ -16,6 +15,7 @@ class Test_001_Login:
         self.lp = Login(self.driver)
         self.driver.get(self.baseUrl)
         self.driver.implicitly_wait(10)
+        self.driver.maximize_window()
         self.lp.setUsername(self.username)
         self.lp.setPassword(self.password)
         self.lp.clickLogin()
