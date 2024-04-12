@@ -1,3 +1,5 @@
+import pytest
+
 from pageObjects.LoginPage import Login
 from utilities.readConfig import ReadConfig
 from utilities.customLogger import Log
@@ -8,6 +10,7 @@ class Test_001_Login:
     password = ReadConfig.getPassword()
     log = Log.logGen()
 
+    @pytest.mark.sanity
     def test_login(self, setup):
         self.log.info("****************** Test_001_Login ********************")
         self.driver = setup

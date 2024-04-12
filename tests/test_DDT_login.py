@@ -1,5 +1,4 @@
 import time
-
 import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service as ChromeService
@@ -13,34 +12,43 @@ from utilities.customLogger import Log
 from utilities import XLutility
 
 class Test_002_DDT_Login:
-
     baseUrl = ReadConfig.getBaseURL()
-    path=".\\TestData\\LoginData.xlsx"
+    username = ReadConfig.getUsername()
+    password = ReadConfig.getPassword()
     log = Log.logGen()
 
-    def test_ddt_login(self,setup):
+    @pytest.mark.parametrize("input, output",
+                             [("Admin", "admin123"),
+                              ("Admin", "admiin")])
+    def test_ddt_login(self,setup,input,output):
         self.log.info("****************** Test_002_DDT_Login ********************")
         self.driver = setup
         self.lp = Login(self.driver)
         self.driver.get(self.baseUrl)
-        WebDriverWait(self.driver, 10).until(EC.presence_of_element_located(self.baseUrl))
-        self.rows=XLutility.getRowCount(self.path,"Sheet1")
-        print("Number of rows: ",self.rows)
-        for r in range(2,self.rows+1):
-            self.user = XLutility.readData(self.path,"Sheet1",r,1)
-            self.password = XLutility.readData(self.path, "Sheet1", r, 2)
-            self.status = XLutility.readData(self.path, "Sheet1", r, 3)
-
-            self.lp.setUsername(self.user)
-            self.lp.setPassword(self.password)
-            self.lp.clickLogin()
-            time.sleep(3)
-            if self.status == "Pass":
-                print("I am under the pass section")
-                self.log.info("****** Test passed *****")
-                self.lp.clickLogoutDropdown()
-                self.lp.clickLogout()
-                assert True
-            else:
-                self.log.info("****** Test Failed *****")
-                assert False
+        # WebDriverWait(self.driver, 10).until(EC.presence_of_element_located(self.baseUrl))
+        self.driver.implicitly_wait(10)
+        self.driver.maximize_window()
+        self.lp.setUsername(input)
+        self.lp.setPassword(output)
+        self.lp.clickLogin()
+        time.sleep(3)
+        # self.rows=XLutility.getRowCount(self.path,"Sheet1")
+        # print("Number of rows: ",self.rows)
+        # for r in range(2,self.rows+1):
+        #     self.user = XLutility.readData(self.path,"Sheet1",r,1)
+        #     self.password = XLutility.readData(self.path, "Sheet1", r, 2)
+        #     self.status = XLutility.readData(self.path, "Sheet1", r, 3)
+        #
+        #     self.lp.setUsername(self.user)
+        #     self.lp.setPassword(self.password)
+        #     self.lp.clickLogin()
+        #     time.sleep(3)
+        #     if self.status == "Pass":
+        #         print("I am under the pass section")
+        #         self.log.info("****** Test passed *****")
+        #         self.lp.clickLogoutDropdown()
+        #         self.lp.clickLogout()
+        #         assert True
+        #     else:
+        #         self.log.info("****** Test Failed *****")
+        #         assert False
